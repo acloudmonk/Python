@@ -1,9 +1,12 @@
 # Enter three numbers and prints their average
 
+# Prompt user to enter three numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
 
-if __name__ == "__main__":
-    first = float(input("Enter first number: "))
-    second = float(input("Enter second number: "))
-    third = float(input("Enter third number: "))
-    average = (first + second + third) / 3
-    print("Average of three number is : ", average)
+# Calculate the average
+average = (num1 + num2 + num3) / 3
+
+# Print the result
+print("The average of", num1, ",", num2, "and", num3, "is", average)

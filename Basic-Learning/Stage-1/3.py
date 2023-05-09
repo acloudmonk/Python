@@ -1,11 +1,15 @@
 # Enter radious of a circle and prints its area, parameter, diameter
+import math
 
+# Prompt user to enter radius
+radius = float(input("Enter the radius of the circle: "))
 
-if __name__ == "__main__":
-    radious = float(input("Enter radious of circle: "))
-    area = 3.14 * radious * radious  # π*radious^2
-    parameter = 2 * 3.14 * radious  # 2*π*radious
-    diameter = 2 * radious  # 2*radious
-    print("Area : ", area)
-    print("Parameter : ", parameter)
-    print("Diameter : ", diameter)
+# Calculate area, perimeter, and diameter
+area = math.pi * radius**2
+perimeter = 2 * math.pi * radius
+diameter = 2 * radius
+
+# Print the results
+print("The area of the circle is:", area)
+print("The perimeter of the circle is:", perimeter)
+print("The diameter of the circle is:", diameter)
