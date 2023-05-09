@@ -2,7 +2,7 @@
 
 x = 5
 y = 10
-print(x + y)
+print("The sum of", x, "and", y, "is", x + y)
 
 
 if __name__ == "__main__":
