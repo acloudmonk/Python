@@ -11,4 +11,3 @@ sqrt = math.sqrt(number)
 
 # Print the result
 print("The square root of", number, "is", sqrt)
-6
