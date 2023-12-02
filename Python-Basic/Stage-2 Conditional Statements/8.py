@@ -13,16 +13,3 @@ if thousands == units and hundreds == tens:
     print("The number is a palindrome!")
 else:
     print("The number is not a palindrome.")
-
-
-##### Second #####
-# It checks if the number is equal to its reverse (number[::-1]) using string slicing.
-# If the number is equal to its reverse, then it is a palindrome.
-
-# Note that in this program, the user input is treated as a string rather than an integer.
-# This allows us to easily reverse the string using slicing.
-number = input("Enter a four-digit number: ")
-if number == number[::-1]:
-    print("The number is a palindrome!")
-else:
-    print("The number is not a palindrome.")

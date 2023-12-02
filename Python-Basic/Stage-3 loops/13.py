@@ -1,49 +1,48 @@
-# Enter a number and check if that is armstrong number or not. Example 153 = 1**3+5**3+3**3
-
-# using for loop
-num = int(input("Enter a number: "))
-sum = 0
-for digit in str(num):
-    sum += int(digit) ** 3
-if num == sum:
-    print(num, "is an Armstrong number")
-else:
-    print(num, "is not an Armstrong number")
+# we can also implement a small calculator using a dictionary in Python to map the user's input to the corresponding arithmetic operation.
 
 
-# using while loop
-num = int(input("Enter a number: "))
-temp = num
-sum = 0
-while temp > 0:
-    digit = temp % 10
-    sum += digit**3
-    temp //= 10
-if num == sum:
-    print(num, "is an Armstrong number")
-else:
-    print(num, "is not an Armstrong number")
-
-# using list comprehension
-num = int(input("Enter a number: "))
-sum = sum([int(digit) ** 3 for digit in str(num)])
-if num == sum:
-    print(num, "is an Armstrong number")
-else:
-    print(num, "is not an Armstrong number")
+def add(num1, num2):
+    return num1 + num2
 
 
-# using recursion
-def is_armstrong(num):
-    if num == 0:
-        return 0
+def subtract(num1, num2):
+    return num1 - num2
+
+
+def multiply(num1, num2):
+    return num1 * num2
+
+
+def divide(num1, num2):
+    return num1 / num2
+
+
+# Define a dictionary that maps the user's input to the corresponding arithmetic operation
+operations = {
+    "1": add,
+    "2": subtract,
+    "3": multiply,
+    "4": divide,
+}
+
+while True:
+    # Display the menu and prompt the user for input
+    print("Menu:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Exit")
+    choice = input("Enter your choice: ")
+
+    # Check the user's input and perform the corresponding operation
+    if choice == "5":
+        print("Exiting the program...")
+        break
+    elif choice in operations:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        result = operations[choice](num1, num2)
+        print("The result is:", result)
     else:
-        return (num % 10) ** 3 + is_armstrong(num // 10)
-
-
-num = int(input("Enter a number: "))
-sum = is_armstrong(num)
-if num == sum:
-    print(num, "is an Armstrong number")
-else:
-    print(num, "is not an Armstrong number")
+        print("Invalid choice! Please enter a number between 1 and 5.")

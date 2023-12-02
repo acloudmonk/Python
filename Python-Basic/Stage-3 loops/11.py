@@ -1,38 +1,33 @@
-# Here's an example program that implements a small calculator using a while loop and an if-elif-else statement to handle the user's input:
+# Enter a number and check if that is armstrong number or not. Example 153 = 1**3+5**3+3**3
 
-while True:
-    # Display the menu and prompt the user for input
-    print("Menu:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    print("5. Exit")
-    choice = input("Enter your choice: ")
+# using for loop
+num = int(input("Enter a number: "))
+sum = 0
+for digit in str(num):
+    sum += int(digit) ** 3
+if num == sum:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
 
-    # Check the user's input and perform the corresponding operation
-    if choice == "1":
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        result = num1 + num2
-        print("The result is:", result)
-    elif choice == "2":
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        result = num1 - num2
-        print("The result is:", result)
-    elif choice == "3":
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        result = num1 * num2
-        print("The result is:", result)
-    elif choice == "4":
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        result = num1 / num2
-        print("The result is:", result)
-    elif choice == "5":
-        print("Exiting the program...")
-        break
-    else:
-        print("Invalid choice! Please enter a number between 1 and 5.")
+
+# using while loop
+num = int(input("Enter a number: "))
+temp = num
+sum = 0
+while temp > 0:
+    digit = temp % 10
+    sum += digit**3
+    temp //= 10
+if num == sum:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+
+# using list comprehension
+num = int(input("Enter a number: "))
+sum = sum([int(digit) ** 3 for digit in str(num)])
+if num == sum:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")

@@ -34,12 +34,3 @@ num2 = float(input("Enter second number: "))
 num3 = float(input("Enter third number: "))
 largest = max(num1, num2, num3)
 print("The largest number is:", largest)
-
-
-##### Method 4: Using a list and the max() function #####
-numbers = []
-for i in range(3):
-    num = float(input("Enter a number: "))
-    numbers.append(num)
-largest = max(numbers)
-print("The largest number is:", largest)
