@@ -4,6 +4,12 @@ character = input("Enter a character: ")
 # Convert character to its ASCII code
 ascii_code = ord(character)
 
+'''
+ord() function in Python is used to convert a single Unicode character into its integer representation,
+i.e., it takes a single string character as an input and returns an integer 
+(representing the Unicode equivalent of the character) as an output.
+'''
+
 # Print the result
 print("The ASCII code of", character, "is", ascii_code)
 
