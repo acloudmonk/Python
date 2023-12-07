@@ -8,6 +8,12 @@ thousands = number // 1000
 hundreds = (number % 1000) // 100
 tens = (number % 100) // 10
 units = number % 10
+
+print(thousands)
+print(hundreds)
+print(tens)
+print(units)
+
 # Check if the number is a palindrome
 if thousands == units and hundreds == tens:
     print("The number is a palindrome!")
