@@ -2,10 +2,10 @@
 
 # using for loop
 num = int(input("Enter a number: "))
-sum = 0
+sum_of_num = 0
 for digit in str(num):
-    sum += int(digit) ** 3
-if num == sum:
+    sum_of_num += int(digit) ** 3
+if num == sum_of_num:
     print(num, "is an Armstrong number")
 else:
     print(num, "is not an Armstrong number")
@@ -14,20 +14,20 @@ else:
 # using while loop
 num = int(input("Enter a number: "))
 temp = num
-sum = 0
+sum_of_num = 0
 while temp > 0:
     digit = temp % 10
-    sum += digit**3
+    sum_of_num += digit**3
     temp //= 10
-if num == sum:
+if num == sum_of_num:
     print(num, "is an Armstrong number")
 else:
     print(num, "is not an Armstrong number")
 
 # using list comprehension
 num = int(input("Enter a number: "))
-sum = sum([int(digit) ** 3 for digit in str(num)])
-if num == sum:
+sum_of_num = sum([int(digit) ** 3 for digit in str(num)])
+if num == sum_of_num:
     print(num, "is an Armstrong number")
 else:
     print(num, "is not an Armstrong number")
