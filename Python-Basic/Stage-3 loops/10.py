@@ -52,24 +52,6 @@ else:
     print("These are not buddy pair numbers.")
 
 
-# Using a function to find the sum of divisors and comparing the results
-def sum_divisors(n):
-    divisors = []
-    for i in range(1, n):
-        if n % i == 0:
-            divisors.append(i)
-    return sum(divisors)
-
-
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-
-if sum_divisors(num1) == num2 and sum_divisors(num2) == num1:
-    print("These are buddy pair numbers.")
-else:
-    print("These are not buddy pair numbers.")
-
-
 # Using a list comprehension to find the divisors and comparing the sums
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))

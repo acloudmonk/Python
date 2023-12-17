@@ -17,11 +17,4 @@ while i <= 10:
 num = int(input("Enter a number: "))
 table = [num * i for i in range(1, 11)]
 for t in table:
-    print(t)
-
-
-# Using the map() function
-num = int(input("Enter a number: "))
-table = list(map(lambda x: num * x, range(1, 11)))
-for t in table:
-    print(t)
+    print(str(num) + " * " + str(int(t / num)) + " = " + str(t))

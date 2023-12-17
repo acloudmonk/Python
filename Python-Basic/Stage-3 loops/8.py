@@ -23,16 +23,3 @@ print("Reverse of the number:", reverse_num)
 num = input("Enter a more than one digit number: ")
 reverse_num = num[::-1]
 print("Reverse of the number:", reverse_num)
-
-
-# using recursion
-def reverse_num(num):
-    if len(num) == 1:
-        return num
-    else:
-        return num[-1] + reverse_num(num[:-1])
-
-
-num = input("Enter a more than one digit number: ")
-reverse_num = reverse_num(num)
-print("Reverse of the number:", reverse_num)

@@ -34,22 +34,3 @@ if sum(divisors) == num:
     print(num, "is an isotonic number.")
 else:
     print(num, "is not an isotonic number.")
-
-
-# using recursion
-def get_divisors(num, divisor=1):
-    if divisor == num:
-        return [0]
-    elif num % divisor == 0:
-        return [divisor] + get_divisors(num, divisor + 1)
-    else:
-        return get_divisors(num, divisor + 1)
-
-
-num = int(input("Enter a number: "))
-divisors = get_divisors(num)
-print
-if sum(divisors) == num:
-    print(num, "is an isotonic number.")
-else:
-    print(num, "is not an isotonic number.")

@@ -16,15 +16,3 @@ while i <= num:
     factorial *= i
     i += 1
 print("Factorial of", num, "is", factorial)
-
-
-# using recursion
-def factorial(num):
-    if num == 0:
-        return 1
-    else:
-        return num * factorial(num - 1)
-
-
-num = int(input("Enter a number: "))
-print("Factorial of", num, "is", factorial(num))
