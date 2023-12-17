@@ -3,9 +3,11 @@
 # using for loop
 start = int(input("Enter the starting number: "))
 end = int(input("Enter the ending number: "))
-for i in range(start, end + 1):
+for i in range(start, end):
     if i % 2 == 0:
         print(i)
+
+print("##########################")
 
 # using while loop
 num1 = int(input("Enter first number: "))
@@ -13,7 +15,7 @@ num2 = int(input("Enter second number: "))
 if num1 > num2:
     num1, num2 = num2, num1  # swap the numbers if they are entered in descending order
 print("Even numbers between", num1, "and", num2, "are:")
-while num1 <= num2:
+while num1 < num2:
     if num1 % 2 == 0:
         print(num1)
     num1 += 1

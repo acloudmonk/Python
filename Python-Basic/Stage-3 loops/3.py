@@ -7,6 +7,7 @@ for i in range(1, num + 1):
     sum += i
 print("The sum of numbers from 1 to", num, "is:", sum)
 
+print("#####################")
 
 # using while loop
 n = int(input("Enter a number: "))
