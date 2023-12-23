@@ -8,7 +8,7 @@
 # **** ****
 # *********
 
-rows = 5  # You can change the number of rows as needed
+rows = 5  # We can change the number of rows as needed
 # Print the top half
 for i in range(rows):
     # Print asterisks on the left side

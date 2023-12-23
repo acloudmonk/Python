@@ -5,7 +5,7 @@
 #     *
 # ******
 
-rows = 5  # You can change the number of rows as needed
+rows = 5  # We can change the number of rows as needed
 # Print the top row
 print("*" * rows)
 # Print the middle rows
