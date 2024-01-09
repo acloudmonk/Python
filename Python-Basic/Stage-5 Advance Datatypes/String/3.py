@@ -1,4 +1,5 @@
 # Python program to check if given string is palindrome or not
+# example is malayalam
 
 # Get input string from user
 user_input = input("Enter a string: ")

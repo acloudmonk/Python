@@ -13,6 +13,7 @@ for char in user_input:
     else:
         char_counts[char] = 1
 
+print(char_counts)
 # Display unique characters and their counts
 print("Unique characters and their counts:")
 for char, count in char_counts.items():
