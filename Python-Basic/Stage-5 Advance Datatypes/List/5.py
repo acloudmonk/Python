@@ -11,3 +11,11 @@ if sorted(list1) == sorted(list2):
     print("Both lists are equal.")
 else:
     print("The lists are not equal.")
+
+
+list1 = [1, 5, 3, 4, 9]
+list2 = [1, 4, 3, 5, 9]
+if list1 == list2:
+    print("Both lists are equal.")
+else:
+    print("The lists are not equal.")

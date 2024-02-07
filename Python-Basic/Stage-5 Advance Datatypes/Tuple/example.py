@@ -1,0 +1,5 @@
+empty = ()
+example_tuple1 = ("Sachin", "Cloud", 35, 99.99)
+example_tuple2 = (1, 2, 3, 4, 5)
+example_tuple3 = ("a", "b", "c", "d", "e")
+example_tuple4 = (52.50, False, -155, 10 + 2j)
